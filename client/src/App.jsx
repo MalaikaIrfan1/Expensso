@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Transactions from './pages/Transactions';
 import Budget from './pages/Budget';
 import Recurring from './pages/Recurring';
+import Analytics from './pages/Analytics';
 import Settings from './pages/Settings';
 
 function PrivateRoute({ children }) {
@@ -30,6 +31,7 @@ function App() {
               <Route path="/transactions" element={<PrivateRoute><Transactions /></PrivateRoute>} />
               <Route path="/budget" element={<PrivateRoute><Budget /></PrivateRoute>} />
               <Route path="/recurring" element={<PrivateRoute><Recurring /></PrivateRoute>} />
+              <Route path="/analytics" element={<PrivateRoute><Analytics /></PrivateRoute>} />
               <Route path="/settings" element={<PrivateRoute><Settings /></PrivateRoute>} />
             </Routes>
           </BrowserRouter>
